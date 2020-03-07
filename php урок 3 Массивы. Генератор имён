@@ -1,0 +1,29 @@
+ <?php
+
+error_reporting(-1);
+
+$syllable = array(
+'ко', 'и', 'дзу', 'ми', 'са', 'ку', 'ра', 'да', 'чи', 'а', 'ки', 'ми', 'на', 'го', 'ха', 'ру'
+);
+
+$question = 'Вам нужно имя? -- Их есть у меня!';
+echo "{$question}\n";
+
+$randForSyllable = rand (2, 4);
+$name = array ();
+
+for ($i = 1; $i <= $randForSyllable; $i++ ) {
+	foreach ($syllable as $key => $value) {
+		if ($key == $randomSyllable) {
+			$currentSyllable = current ($syllable);
+			$name .= $currentSyllable;	
+			break);
+		}
+	}	
+	
+}
+
+$totalName = implode("" , $name);
+
+echo "Советую имя {$totalName} - не прогадаешь!";
+?>

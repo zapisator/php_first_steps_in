@@ -1,0 +1,31 @@
+ <?php
+
+error_reporting(-1);
+
+$anonHeight = 169;
+
+$classMates = array(
+'Антон' => 172,
+'Семён' => 165,
+'Елена' => 189,
+'Иван' => 171,
+'Пётр' => 182,
+'Сидор' => 176,
+'Анна' => 180,
+'Татьяна' => 179,
+'Мария' => 171
+);
+
+$s = asort ($classMates);
+
+foreach ($classMates as $name => $height) {
+	if ($height < $anonHeight) {
+		unset ($classMates[$name]);	
+	}
+}
+
+$classMatesHigher = count($classMates);
+
+echo "Одноклассников выше анона ровно {$classMatesHigher} человек";
+
+?>

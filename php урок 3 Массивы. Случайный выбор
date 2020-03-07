@@ -1,0 +1,21 @@
+ <?php
+
+error_reporting(-1);
+
+$anonHeight = 169;
+
+$answers = array(
+'да', 'нет', 'не знаю', 'никогда', 'это зависит от тебя', 'спроси анона'
+);
+
+$question = 'Выучу ли я PHP без регистрации и смс?';
+echo "Вопрос: {$question}\n";
+
+$randomAnswer = array_rand ($answers, 1);
+foreach ($answers as $key => $value) {
+	if ($key == $randomAnswer) {
+		echo "Ответ: {$value}";	
+	}
+}
+
+?>

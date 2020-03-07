@@ -1,0 +1,22 @@
+ <?php
+ 
+error_reporting(-1);
+
+$text = "Mary Had A Little Lamb and She LOVED It So";
+
+$textLow = ($text);
+$trimmedText = trim($textLow, " ", ".", ",");
+
+$length = strlen($trimmedText);
+$halfLeghth = floor ($length / 2);
+
+echo "Только маленькие буквы: {$textLow}\n";
+var_dump ($textLow);
+echo "Сокращённый текст: {$trimmedText}\n";
+var_dump ($trimmedText);
+echo "Длина текста: {$length}\n";
+var_dump ($length);
+echo "Половина длины текста: {$halfLeghth}\n";
+var_dump ($halfLeghth);
+
+?>

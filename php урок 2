@@ -1,0 +1,8 @@
+<?php
+	error_reporting(-1);
+
+	for ($a = 1; $a < 10; $a++) {
+		$b = 	$a * $a;	
+		echo "$a * $a = $b \n";
+	}		
+?>
